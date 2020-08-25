@@ -16,7 +16,7 @@ export default function Home() {
         src={ImageTomato}
         alt=""
         style={{
-          width: 600,
+          width: "80%",
         }}
       />
       <h2 style={{ fontSize: 30 }}>
