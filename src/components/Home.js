@@ -1,5 +1,5 @@
 import React from "react";
-import ImageTomato from "../assets/tomato.png";
+import comingSoonVideo from "../assets/comming-soon.mp4";
 
 export default function Home() {
   return (
@@ -12,16 +12,18 @@ export default function Home() {
         flexDirection: "column",
       }}
     >
-      <img
-        src={ImageTomato}
-        alt=""
+      <video
+        autoPlay
+        muted
+        loop
+        id="myVideo"
         style={{
-          width: "80%",
+          width: "100%",
         }}
-      />
-      <h2 style={{ fontSize: 30 }}>
-        <i>Coming Soon</i>
-      </h2>
+      >
+        <source src={comingSoonVideo} type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
     </div>
   );
 }
