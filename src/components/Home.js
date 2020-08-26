@@ -3,22 +3,28 @@ import comingSoonVideo from "../assets/comming-soon.mp4";
 
 export default function Home() {
   return (
-    <video
-      autoPlay
-      muted
-      loop
-      id="myVideo"
+    <div
       style={{
-        position: "fixed",
-        top: 0,
-        bottom: 0,
-        left: 0,
-        right: 0,
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
         width: "100%",
+        height: "100vh",
       }}
     >
-      <source src={comingSoonVideo} type="video/mp4" />
-      Your browser does not support HTML5 video.
-    </video>
+      <video
+        autoPlay
+        muted
+        loop
+        id="myVideo"
+        style={{
+          width: "100%",
+          height: "100%",
+        }}
+      >
+        <source src={comingSoonVideo} type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
   );
 }
